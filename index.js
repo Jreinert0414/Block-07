@@ -6,8 +6,7 @@
 //comment each line to define objective
 //create alert displaying codes 
 
-//displays message upon entering page 
-alert(' You have received this message because you have been chosen to open an important vault. Here is the secret combination:')
+const string = (' You have received this message because you have been chosen to open an important vault. Here is the secret combination:')
 
 //makes 1st number in combo 10
 const comb1 = (100/10);
@@ -22,4 +21,4 @@ let comb3 = (comb2 - 1)
 console.log (comb3)
 
 //semd final alert with full combination
-alert (comb1 + ' ' + comb2 + ' ' + comb3 )
+alert (string + ':' + comb1 + ' ' + comb2 + ' ' + comb3 )                                           
