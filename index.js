@@ -4,8 +4,9 @@
 // let comb2 be 40
 // let comb3 be 39
 //comment each line to define objective
-//create alert displaying codes 
+//create alert displaying codes
 
+//create message string
 const string = (' You have received this message because you have been chosen to open an important vault. Here is the secret combination:')
 
 //makes 1st number in combo 10
@@ -20,5 +21,26 @@ console.log (comb2)
 let comb3 = (comb2 - 1)
 console.log (comb3)
 
-//semd final alert with full combination
-alert (string + ':' + comb1 + ' ' + comb2 + ' ' + comb3 )                                           
+//send final alert with full combination
+
+  const first = document.getElementById('c1');
+  console.log(first);
+  const second = document.getElementById(`c2`); 
+  console.log (second);
+  const third = document.getElementById(`c3`);
+  console.log(third);
+
+
+
+  // document.getElementById('sub').disabled = true
+
+if(first === comb1 && second === comb2 && third === comb3){
+
+  document.getElementById(`sub`).disabled = false;
+  alert (string + ':' + comb1 + ' ' + comb2 + ' ' + comb3 );    
+
+}
+
+else if(first !== comb1){
+  document.getElementById(`sub`).disabled = true;
+}

@@ -1,0 +1,11 @@
+form{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  max-width: 10em;
+}
+
+#sub {
+  max-width: 50%;
+  margin-top: 1em;
+}
